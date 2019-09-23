@@ -14,9 +14,7 @@ class MainController extends Controller
 
     public function main()
     {
-//        $news = DB::table('news')->orderByDesc('id')->get();
-        $news = News::all();
-//        dd($news);
+        $news = DB::table('news')->orderByDesc('id')->limit(5)->get();
         return view('pages.main',[
             'news' => $news
         ]);
@@ -63,27 +61,6 @@ class MainController extends Controller
         ];
         return view('pages.sales', [
             'sales' => $sales
-        ]);
-    }
-
-    public function prices()
-    {
-        $prices = [
-            'Standart' => (object)[
-                'description' => 'Тариф включем 10 МБ в месяц',
-                'price' => '100$'
-            ],
-            'Lux' => (object)[
-                'description' => 'Тариф включем 50 МБ в месяц',
-                'price' => '200$'
-            ],
-            'Max Power' => (object)[
-                'description' => 'Тариф включем безлимит',
-                'price' => '500$'
-            ]
-        ];
-        return view('pages.pricing', [
-            'prices' => $prices
         ]);
     }
 }

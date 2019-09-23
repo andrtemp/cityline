@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        {{ date('Y-m-d H:i:s', $post->created_at->getTimestamp()) }}
+                        {{ $post->created_at }}
                     </div>
                 </div>
             @endforeach
@@ -79,29 +79,6 @@
                     Телевидение нового поколения
                 </p>
             </div>
-        </div>
-    </section>
-    <section class="mb-3">
-        <h3 class="text-center mb-3">
-            Контакты
-        </h3>
-        <div class="contacts__items">
-        <span class="item__row">
-            <i class="fa fa-phone mr-3"></i>
-            <span>071-304-74-74</span>
-        </span>
-            <span class="item__row">
-            <i class="fa fa-phone mr-3"></i>
-            <span>099-734-999-1</span>
-        </span>
-            <span class="item__row">
-            <i class="fa fa-envelope mr-3"></i>
-            <span>citylinenet@gmail.com</span>
-        </span>
-            <span class="item__row">
-            <i class="fa fa-map-marker mr-3"></i>
-            <span>Донецкая область, г. Комсомолськое, ул. Ленина 12Е</span>
-        </span>
         </div>
     </section>
 @endsection
