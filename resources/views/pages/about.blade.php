@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2 class="text-center">
+    <h2 class="text-center mb-5">
         О нас
     </h2>
     <p class="text-center">

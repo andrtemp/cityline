@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <h2 class="text-center">
+    <h2 class="text-center mb-5">
         Новости
     </h2>
     <div class="news__container">

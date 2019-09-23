@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-    <h2 class="text-center">
+    <h2 class="text-center mb-5">
         Контакты
     </h2>
     <div class="contacts__items">
