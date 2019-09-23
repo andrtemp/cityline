@@ -24,6 +24,11 @@
       font-size: 1em;
       padding: 1em;
 
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+
       .footer__icon {
         font-size: 2em;
       }
@@ -94,6 +99,10 @@
 
 .card__list {
   display: flex;
+}
 
+.carousel-inner{
+  width:100%;
+  max-height: 600px;
 }
 

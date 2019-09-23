@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MainController extends Controller
 {
@@ -13,7 +14,12 @@ class MainController extends Controller
 
     public function main()
     {
-        return view('pages.main');
+//        $news = DB::table('news')->orderByDesc('id')->get();
+        $news = News::all();
+//        dd($news);
+        return view('pages.main',[
+            'news' => $news
+        ]);
     }
 
     public function about()

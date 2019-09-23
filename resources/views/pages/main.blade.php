@@ -39,6 +39,31 @@
 @section('content')
     <section class="mb-3">
         <h3 class="text-center mb-3">
+            Последние новости
+        </h3>
+        <div class="news__container">
+            @foreach($news as $post)
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title">{{ $post->header }}</h5>
+                    </div>
+                    <div class="card-body d-inline-flex">
+                        <div class="col-md-4">
+                            <img src="{{ asset('storage' . $post->image) }}" class="post__image" alt="{{ $post->header }}">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text text-justify">{{ $post->main }}</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        {{ date('Y-m-d H:i:s', $post->created_at->getTimestamp()) }}
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </section>
+    <section class="mb-3">
+        <h3 class="text-center mb-3">
             Услуги
         </h3>
         <div class="services__items">
@@ -71,11 +96,11 @@
         </span>
             <span class="item__row">
             <i class="fa fa-envelope mr-3"></i>
-            <span>andr.evich11@gmail.com</span>
+            <span>citylinenet@gmail.com</span>
         </span>
             <span class="item__row">
             <i class="fa fa-map-marker mr-3"></i>
-            <span>Париж, Елисейчкие поля, 1</span>
+            <span>Донецкая область, г. Комсомолськое, ул. Ленина 12Е</span>
         </span>
         </div>
     </section>

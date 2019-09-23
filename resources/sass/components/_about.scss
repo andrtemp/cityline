@@ -5,6 +5,11 @@
   flex-direction: row;
   flex-flow: row wrap;
 
+  .block__text {
+    width: 100%;
+    display: block;
+  }
+
   .block__item {
     display: flex;
     align-items: center;
@@ -20,8 +25,9 @@
     }
   }
 
-  .block__item:hover{
+  .block__item:hover {
     transform: scale(1.1);
+    transition: 0.8s;
     background: $gradient;
     color: $white;
     border-radius: 3em;

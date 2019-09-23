@@ -53,9 +53,6 @@
                                 <a href="{{ route('news') }}">Новости</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('pricing') }}">Цены</a>
-                            </li>
-                            <li class="nav-item">
                                 <a href="{{ route('contacts') }}">Контакты</a>
                             </li>
                         </ul>
@@ -80,21 +77,25 @@
                     <p><i class="fa fa-phone-square footer__icon mr-3"></i>071-304-74-74</p>
                 </div>
                 <div class="section__addresses">
-                    <p><i class="fa fa-envelope footer__icon mr-3"></i>mail@mail.ua</p>
-                    <p><i class="fa fa-map-marker footer__icon mr-3"></i>Париж, Елисейчкие поля, 1</p>
+                    <p><a href="mailto:citylinenet@gmail.com"><i class="fa fa-envelope footer__icon mr-3"></i>citylinenet@gmail.com</a></p>
+                    <p><i class="fa fa-map-marker footer__icon mr-3"></i>Донецкая область, г. Комсомолськое, ул. Ленина 12Е</p>
                 </div>
                 <div class="section__icons">
                     <div>
-                        <a class="footer__icon" href="http://instagram.com" target="_blank">
-                            <i class="fa fa-instagram">
-                            </i>
-                        </a>
-                        <a class="footer__icon" href="http://facebook.com" target="_blank">
-                            <i class="fa fa-facebook">
-                            </i>
-                        </a>
-                        <a class="footer__icon" href="http://vk.com" target="_blank">
+                        {{--<a class="footer__icon" href="http://instagram.com" target="_blank">--}}
+                            {{--<i class="fa fa-instagram">--}}
+                            {{--</i>--}}
+                        {{--</a>--}}
+                        {{--<a class="footer__icon" href="http://facebook.com" target="_blank">--}}
+                            {{--<i class="fa fa-facebook">--}}
+                            {{--</i>--}}
+                        {{--</a>--}}
+                        <a class="footer__icon" href="https://vk.com/citylinegroupe" target="_blank">
                             <i class="fa fa-vk">
+                            </i>
+                        </a>
+                        <a class="footer__icon" href="https://t.me/citylinegroupe" target="_blank">
+                            <i class="fa fa-telegram">
                             </i>
                         </a>
                     </div>
@@ -102,7 +103,7 @@
             </div>
         </div>
         <!-- Copyright -->
-        <p class="footer-copyright text-center">&copy; {{ date('Y') }}</p>
+        <p class="footer-copyright text-center">&copy; {{ date('Y') }}, CITYLINE. Все права защищены</p>
         <!-- Copyright -->
     </footer>
 </div>
