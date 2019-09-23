@@ -1,0 +1,24 @@
+@import '../variables';
+
+.contacts__map {
+  width: 100%;
+  margin-bottom: -10px;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+.contacts__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .fa {
+    font-size: 3em;
+  }
+
+  .item__row:hover {
+    transform: scale(1.2);
+  }
+}

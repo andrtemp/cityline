@@ -1,0 +1,99 @@
+@import '../variables';
+
+.header-custom, .footer-custom {
+  background-color: $hf-block;
+  color: $section-block;
+}
+
+.body__content {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 200px;
+}
+
+.footer-custom {
+  height: 200px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  .section {
+    &__phones, &__addresses {
+      font-size: 1em;
+      padding: 1em;
+
+      .footer__icon {
+        font-size: 2em;
+      }
+    }
+
+    &__icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .footer__icon {
+        font-size: 3em;
+        color: $white;
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+
+  .footer {
+    &__row {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.header-custom {
+  min-height: 5vh;
+
+  .nav-item {
+    padding: 20px;
+  }
+
+  .nav-item:hover {
+    transform: scale(1.2);
+  }
+
+  .brand-logo {
+    width: 300px;
+  }
+
+}
+
+.navigation-menu {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $red;
+    text-decoration: none;
+  }
+
+}
+
+.main-content {
+  padding: 3vh 10vw;
+  font-size: 1em;
+}
+
+.important__text {
+  font-size: 2em;
+}
+
+.card__list {
+  display: flex;
+
+}
+

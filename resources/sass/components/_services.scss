@@ -1,0 +1,29 @@
+@import "../variables";
+
+.services__items{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  .block__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 46%;
+    padding: 2em;
+    margin: 2%;
+
+    .item__image {
+      margin: 20px;
+      font-size: 15em;
+      color: $gradient;
+    }
+  }
+
+  .block__item:hover{
+    transform: scale(1.1);
+    background: $gradient;
+    color: $white;
+    border-radius: 3em;
+  }
+}
