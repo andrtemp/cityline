@@ -50,6 +50,7 @@
 }
 
 .footer-custom .section__icons .footer__icon:hover {
+  text-decoration: none;
   color: #e3342f;
 }
 
@@ -226,6 +227,7 @@
   max-width: 400px;
   max-height: 400px;
   border-radius: 2em;
+  width: 100%;
 }
 
 .services__items {
