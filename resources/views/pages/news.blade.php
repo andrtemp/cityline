@@ -12,7 +12,7 @@
         @foreach($news as $post)
             <div class="card mb-3">
                 <div class="card-header">
-                    <h5 class="card-title">{{ $post->header }}</h5>
+                    <h5 class="card-title text-center">{{ $post->header }}</h5>
                 </div>
                 <div class="card-body d-inline-flex">
                     <div class="col-md-4">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    {{ date('Y-m-d H:i:s', $post->created_at->getTimestamp()) }}
+                    <span class="pull-right">{{ date('Y-m-d H:i:s', $post->created_at->getTimestamp()) }}</span>
                 </div>
             </div>
         @endforeach
