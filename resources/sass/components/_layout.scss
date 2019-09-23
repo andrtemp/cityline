@@ -62,11 +62,11 @@
 .header-custom {
   min-height: 5vh;
 
-  .nav-item {
+  .navigation__item {
     padding: 20px;
   }
 
-  .nav-item:hover {
+  .navigation__item:hover {
     transform: scale(1.2);
   }
 
@@ -102,8 +102,8 @@
   display: flex;
 }
 
-.carousel-inner{
-  width:100%;
+.carousel-inner {
+  width: 100%;
   max-height: 600px;
 }
 

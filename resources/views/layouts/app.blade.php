@@ -40,20 +40,20 @@
                     </div>
                     <nav class="navbar">
                         <ul class="nav navigation-menu">
-                            <li class="nav-item">
-                                <a href="{{ route('about') }}">О нас</a>
+                            <li>
+                                <a class="navigation__item" href="{{ route('about') }}">О нас</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="{{ route('services') }}">Услуги</a>
+                            <li>
+                                <a class="navigation__item" href="{{ route('services') }}">Услуги</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="{{ route('sales') }}">Акции</a>
+                            <li>
+                                <a class="navigation__item" href="{{ route('sales') }}">Акции</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="{{ route('news') }}">Новости</a>
+                            <li>
+                                <a class="navigation__item" href="{{ route('news') }}">Новости</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="{{ route('contacts') }}">Контакты</a>
+                            <li>
+                                <a class="navigation__item" href="{{ route('contacts') }}">Контакты</a>
                             </li>
                         </ul>
                     </nav>
