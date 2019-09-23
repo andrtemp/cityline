@@ -34,23 +34,9 @@
     }
 
     .card:hover {
-
-      .card-header {
-        color: $black;
-        background: $white;
-      }
-
-      .card-body {
-        background: $gradient;
-        color: $white;
-      }
-
-      .card-footer {
-        color: $black;
-        background: $white;
-      }
-
       transform: scale(1.1);
+      transition: 0.8s;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
     }
   }
 }

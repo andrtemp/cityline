@@ -140,21 +140,8 @@
 
 .main__content .card__list .card:hover {
   transform: scale(1.1);
-}
-
-.main__content .card__list .card:hover .card-header {
-  color: #000000;
-  background: #ffffff;
-}
-
-.main__content .card__list .card:hover .card-body {
-  background: linear-gradient(to right, #fa8000 0%, #e30000 36%, #cb0041 100%);
-  color: #ffffff;
-}
-
-.main__content .card__list .card:hover .card-footer {
-  color: #000000;
-  background: #ffffff;
+  transition: 0.8s;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
 }
 
 .contacts__map {
