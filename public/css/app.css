@@ -216,6 +216,11 @@
   color: #ffffff;
 }
 
+.news__container .card:hover {
+  transform: scale(1.05);
+  transition: 0.8s;
+}
+
 .news__container .card-header {
   background: linear-gradient(to right, #fa8000 0%, #e30000 36%, #cb0041 100%);
   color: #ffffff;

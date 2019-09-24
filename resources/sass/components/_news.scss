@@ -1,6 +1,11 @@
 @import "../variables";
 
 .news__container {
+  .card:hover {
+    transform: scale(1.05);
+    transition: 0.8s;
+  }
+
   .card-header {
     background: $gradient;
     color: $white;
