@@ -1,6 +1,27 @@
 @import "../variables";
 
-.services__items{
+.services__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .services__image {
+    display: flex;
+    width: 33%;
+    padding: 1em;
+
+    img {
+      width: 100%;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      transition: 0.8s;
+    }
+  }
+}
+
+.services__items {
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -20,7 +41,7 @@
     }
   }
 
-  .block__item:hover{
+  .block__item:hover {
     transform: scale(1.1);
     transition: 0.8s;
     background: $gradient;

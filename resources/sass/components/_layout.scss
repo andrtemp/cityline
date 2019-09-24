@@ -74,19 +74,26 @@
     width: 300px;
   }
 
-}
-
-.navigation-menu {
-  a {
-    color: white;
-    text-decoration: none;
+  .header__contacts {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
   }
 
-  a:hover {
-    color: $red;
-    text-decoration: none;
-  }
+  .navigation-menu {
+    justify-content: space-around;
+    width: 100%;
 
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $red;
+      text-decoration: none;
+    }
+  }
 }
 
 .main-content {

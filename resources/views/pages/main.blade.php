@@ -5,24 +5,14 @@
 @endsection
 
 @section('start-full-screen')
-    <div>
+    <div class="container">
         <div id="sales_slider" data-interval="3000" class="carousel slide z-depth-1-half" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{ asset('img/slider/1.jpg') }}" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('img/slider/2.jpg') }}" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('img/slider/3.jpg') }}" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('img/slider/4.jpg') }}" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('img/slider/5.jpg') }}" alt="Third slide">
-                </div>
+                @for ($i = 1; $i < 4; $i++)
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{ asset('img/slider/' . $i . '.jpg') }}" alt="{{ $i }}">
+                    </div>
+                @endfor
             </div>
         </div>
     </div>
@@ -60,19 +50,12 @@
         <h3 class="text-center">
             Услуги
         </h3>
-        <div class="services__items">
-            <div class="block__item">
-                <i class="fa fa-wifi item__image"></i>
-                <p class="item__text">
-                    Интернет
-                </p>
-            </div>
-            <div class="block__item">
-                <i class="fa fa-tv item__image"></i>
-                <p class="item__text">
-                    Телевидение нового поколения
-                </p>
-            </div>
+        <div class="services__list">
+            @for ($i = 1; $i < 6; $i++)
+                <div class="services__image">
+                    <img src="{{ asset('img/tarif/' . $i . '.png') }}" alt="{{ $i }}">
+                </div>
+            @endfor
         </div>
     </section>
 @endsection

@@ -22,21 +22,9 @@
                     </a>
                 </div>
                 <div class="col-md-6 pull-right">
-                    <div class="row">
-                        <form class="form-inline">
-                            @csrf
-                            <label>
-                                <span class="m-2">Логин</span>
-                                <input class="form-control-sm" type="text" placeholder="Логин"/>
-                            </label>
-                            <label>
-                                <span class="m-2">Пароль</span>
-                                <input class="form-control-sm" type="password" placeholder="Пароль"/>
-                            </label>
-                            <button class="btn btn-sm ml-3 btn-danger" type="submit">
-                                Войти
-                            </button>
-                        </form>
+                    <div class="row header__contacts">
+                        <span><i class="fa fa-phone mr-3"></i>099-734-999-1</span>
+                        <span><i class="fa fa-phone mr-3"></i>071-304-74-74</span>
                     </div>
                     <nav class="navbar">
                         <ul class="nav navigation-menu">
@@ -45,9 +33,6 @@
                             </li>
                             <li>
                                 <a class="navigation__item" href="{{ route('services') }}">Услуги</a>
-                            </li>
-                            <li>
-                                <a class="navigation__item" href="{{ route('sales') }}">Акции</a>
                             </li>
                             <li>
                                 <a class="navigation__item" href="{{ route('news') }}">Новости</a>
@@ -59,8 +44,28 @@
                     </nav>
                 </div>
                 <div class="col-md-2">
-                    <p><i class="fa fa-phone mr-3"></i>099-734-999-1</p>
-                    <p><i class="fa fa-phone mr-3"></i>071-304-74-74</p>
+
+                    <form class="form-inline">
+                        @csrf
+                        <div class="row mb-3">
+                            <label class="col-sm-5 control-label">Логин</label>
+                            <div class="col-sm-7">
+                                <input class="form-control-sm" type="text" placeholder="Логин"/>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-5 control-label">Пароль</label>
+                            <div class="col-sm-7">
+                                <input class="form-control-sm" type="password" placeholder="Пароль"/>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn btn-sm btn-danger pull-right" type="submit">
+                                Войти
+                            </button>
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>
