@@ -88,7 +88,7 @@
                     <p><i class="fa fa-phone footer__icon mr-3"></i>071-304-74-74</p>
                 </div>
                 <div class="section__addresses">
-                    <p><a href="mailto:citylinenet@gmail.com"><i class="fa fa-envelope footer__icon mr-3"></i>citylinenet@gmail.com</a>
+                    <p><a href="mailto:citylinenet@gmail.com"><i class="fa fa-envelope footer__icon mr-3"></i>office@cityline.dn.ua</a>
                     </p>
                     <p><i class="fa fa-map-marker footer__icon mr-3"></i>Донецкая область, г. Комсомолськое, ул. Ленина
                         12Е</p>

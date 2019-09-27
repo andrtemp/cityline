@@ -24,7 +24,7 @@
         </span>
         <span class="item__row">
             <i class="fa fa-envelope mr-3"></i>
-            <span>citylinenet@gmail.com</span>
+            <span>office@cityline.dn.ua</span>
         </span>
         <span class="item__row">
             <i class="fa fa-map-marker mr-3"></i>

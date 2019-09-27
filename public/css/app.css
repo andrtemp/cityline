@@ -88,6 +88,7 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 1em;
+  font-size: 1.3em;
 }
 
 .header-custom .navigation-menu {
