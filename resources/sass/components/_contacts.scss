@@ -2,20 +2,34 @@
 
 .contacts__map {
   width: 100%;
-  margin-bottom: -10px;
 
   iframe {
     width: 100%;
   }
 }
 
-.contacts__items {
+.contact__page {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
+  .page__block {
+    width: 50%;
+  }
+}
+
+.contacts__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   .fa {
     font-size: 3em;
+  }
+
+  .item__row {
+    display: flex;
+    flex-direction: column;
   }
 
   .item__row:hover {

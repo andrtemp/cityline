@@ -166,21 +166,35 @@
 
 .contacts__map {
   width: 100%;
-  margin-bottom: -10px;
 }
 
 .contacts__map iframe {
   width: 100%;
 }
 
-.contacts__items {
+.contact__page {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.contact__page .page__block {
+  width: 50%;
+}
+
+.contacts__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .contacts__items .fa {
   font-size: 3em;
+}
+
+.contacts__items .item__row {
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__items .item__row:hover {
