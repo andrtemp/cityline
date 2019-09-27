@@ -6,6 +6,10 @@
   color: #ffffff;
 }
 
+.header-custom {
+  font-size: 1.1em;
+}
+
 .body__content {
   position: relative;
   min-height: 100vh;
@@ -63,12 +67,17 @@
   min-height: 5vh;
 }
 
-.header-custom .navigation__item {
-  padding: 20px;
+.header-custom .navigation__button {
+  padding: 10px;
+  background: #e3342f;
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.header-custom .navigation__item:hover {
-  transform: scale(1.2);
+.header-custom .navigation__button:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
+  cursor: pointer;
 }
 
 .header-custom .brand-logo {
@@ -92,7 +101,6 @@
 }
 
 .header-custom .navigation-menu a:hover {
-  color: #e3342f;
   text-decoration: none;
 }
 
@@ -241,7 +249,7 @@
 
 .services__list .services__image {
   display: flex;
-  width: 33%;
+  width: 45%;
   padding: 1em;
 }
 

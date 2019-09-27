@@ -9,7 +9,7 @@
         <div id="sales_slider" data-interval="3000" class="carousel slide z-depth-1-half" data-ride="carousel">
             <div class="carousel-inner">
                 @for ($i = 1; $i < 4; $i++)
-                    <div class="carousel-item active">
+                    <div class="carousel-item {{ $i > 1 ? '' : 'active' }}">
                         <img class="d-block w-100" src="{{ asset('img/slider/' . $i . '.jpg') }}" alt="{{ $i }}">
                     </div>
                 @endfor
@@ -44,18 +44,6 @@
                     </div>
                 </div>
             @endforeach
-        </div>
-    </section>
-    <section class="mb-3">
-        <h3 class="text-center">
-            Услуги
-        </h3>
-        <div class="services__list">
-            @for ($i = 1; $i < 6; $i++)
-                <div class="services__image">
-                    <img src="{{ asset('img/tarif/' . $i . '.png') }}" alt="{{ $i }}">
-                </div>
-            @endfor
         </div>
     </section>
 @endsection

@@ -28,16 +28,16 @@
                     </div>
                     <nav class="navbar">
                         <ul class="nav navigation-menu">
-                            <li>
+                            <li class="navigation__button">
                                 <a class="navigation__item" href="{{ route('about') }}">О нас</a>
                             </li>
-                            <li>
+                            <li class="navigation__button">
                                 <a class="navigation__item" href="{{ route('services') }}">Услуги</a>
                             </li>
-                            <li>
+                            <li class="navigation__button">
                                 <a class="navigation__item" href="{{ route('news') }}">Новости</a>
                             </li>
-                            <li>
+                            <li class="navigation__button">
                                 <a class="navigation__item" href="{{ route('contacts') }}">Контакты</a>
                             </li>
                         </ul>
@@ -45,27 +45,29 @@
                 </div>
                 <div class="col-md-2">
 
-                    <form class="form-inline">
-                        @csrf
-                        <div class="row mb-3">
-                            <label class="col-sm-5 control-label">Логин</label>
-                            <div class="col-sm-7">
-                                <input class="form-control-sm" type="text" placeholder="Логин"/>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label class="col-sm-5 control-label">Пароль</label>
-                            <div class="col-sm-7">
-                                <input class="form-control-sm" type="password" placeholder="Пароль"/>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <button class="btn btn-sm btn-danger pull-right" type="submit">
-                                Войти
-                            </button>
-                        </div>
-
-                    </form>
+                    {{--<form class="form-inline">--}}
+                        {{--@csrf--}}
+                        {{--<div class="row mb-3">--}}
+                            {{--<label class="col-sm-5 control-label">Логин</label>--}}
+                            {{--<div class="col-sm-7">--}}
+                                {{--<input class="form-control-sm" type="text" placeholder="Логин"/>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="row mb-3">--}}
+                            {{--<label class="col-sm-5 control-label">Пароль</label>--}}
+                            {{--<div class="col-sm-7">--}}
+                                {{--<input class="form-control-sm" type="password" placeholder="Пароль"/>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-md-12">--}}
+                            {{--<button class="btn btn-sm btn-danger pull-right" type="submit">--}}
+                                {{--Войти--}}
+                            {{--</button>--}}
+                        {{--</div>--}}
+                    {{--</form>--}}
+                    <a class="btn btn-danger" href="https://my.cityline.dn.ua">
+                        Личный кабинет
+                    </a>
                 </div>
             </div>
         </div>

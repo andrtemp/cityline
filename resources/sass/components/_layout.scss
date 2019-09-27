@@ -5,6 +5,10 @@
   color: $section-block;
 }
 
+.header-custom {
+  font-size: $main-font-size;
+}
+
 .body__content {
   position: relative;
   min-height: 100vh;
@@ -63,11 +67,19 @@
   min-height: 5vh;
 
   .navigation__item {
-    padding: 20px;
   }
 
-  .navigation__item:hover {
-    transform: scale(1.2);
+  .navigation__button {
+    padding: 10px;
+    background: $red;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .navigation__button:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+    cursor: pointer;
   }
 
   .brand-logo {
@@ -90,7 +102,6 @@
     }
 
     a:hover {
-      color: $red;
       text-decoration: none;
     }
   }
