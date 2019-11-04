@@ -1,6 +1,11 @@
 window.$ = window.jQuery = require('jquery');
 require('bootstrap');
 
-$(document).ready(function () {
-    $('#sales_slider').carousel(1);
-});
+(function(){
+    var burger = document.querySelector('.burger-container'),
+        header = document.querySelector('.header');
+
+    burger.onclick = function() {
+        header.classList.toggle('menu-opened');
+    }
+}());

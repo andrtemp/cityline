@@ -30,6 +30,11 @@ class MainController extends Controller
         return view('pages.contacts');
     }
 
+    public function prices()
+    {
+        return view('pages.pricing');
+    }
+
     public function news()
     {
         $news = News::all();

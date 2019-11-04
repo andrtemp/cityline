@@ -5,25 +5,19 @@
 @endsection
 
 @section('content')
-    <h2 class="text-center mb-5">
-        Цены
-    </h2>
-    <div class="main__content">
-        <div class="card__list">
-            @foreach($prices as $name => $price)
-                <div class="card">
-                    <h3 class="card-header">
-                        {{ $name }}
-                    </h3>
-                    <div class="card-body">
-                        {{ $price->description }}
-                        <span class="text-lg-right text-danger">
-                        {{ $price->price }}
-                    </span>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </div>
+    <h1>Ціни</h1>
+    <div class="price">
+        <ul>
+            <li>Консультація  безкоштовно</li>
+            <li>Спори з суб’єктами владних повноважень  3000 грн</li>
+            <li>Адміністративні справи   2000 грн</li>
+            <li>Цивільні справи  5000 грн</li>
+            <li>Господарські справи  5000 грн.</li>
+            <li>Представництво в судах  від 1500 грн.</li>
+            <li>Позовна заява від 1500 грн</li>
+            <li>Апеляційна або Касаційна скарга 2000 грн.</li>
+            <li>Представництво потерпілих від 1000 грн.</li>
 
+        </ul>
+    </div>
 @endsection

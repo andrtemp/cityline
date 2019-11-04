@@ -17801,9 +17801,14 @@ window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jqu
 
 __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 
-$(document).ready(function () {
-  $('#sales_slider').carousel(1);
-});
+(function () {
+  var burger = document.querySelector('.burger-container'),
+      header = document.querySelector('.header');
+
+  burger.onclick = function () {
+    header.classList.toggle('menu-opened');
+  };
+})();
 
 /***/ }),
 
