@@ -1,11 +1,18 @@
 window.$ = window.jQuery = require('jquery');
 require('bootstrap');
 
-(function(){
-    var burger = document.querySelector('.burger-container'),
+window.addEventListener('DOMContentLoaded', (event) => {
+    let burger = document.querySelector('.burger-container'),
         header = document.querySelector('.header');
 
     burger.onclick = function() {
         header.classList.toggle('menu-opened');
-    }
-}());
+    };
+
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox({
+            wrapping: false,
+        });
+    });
+});

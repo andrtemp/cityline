@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
-
-    <title>@yield('page-name', 'City Line')</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>@yield('page-name', '')</title>
 
     <!-- Fonts -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -15,7 +16,7 @@
 <div class="body__content">
     <header class="header">
         <div class="container headerWrap">
-            <div class="logo"><img src="{{ asset('img/logo.png') }}" alt="logo"></div>
+            <div class="logo"><a href="/"><img src="{{ asset('img/logo.png') }}" alt="logo"></a></div>
             <ul class="navWrap">
                 <li class="nav"><a href="/">Про мене</a></li>
                 <li class="nav"><a href="/services">Послуги</a></li>
@@ -42,14 +43,13 @@
 
     </header>
 
-    <div class="page__content">
-        <div class="main-content">
-            @yield('content')
-        </div>
+    <div class="main-content container">
+        @yield('content')
     </div>
 
     <footer class="footer">
         © 2019 All Rights Reserved.
     </footer></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 </body>
 </html>

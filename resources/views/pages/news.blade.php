@@ -5,9 +5,7 @@
 @endsection
 
 @section('content')
-    <h2 class="text-center mb-5">
-        Новости
-    </h2>
+    <h1>Новини </h1>
     <div class="news__container">
         @foreach($news as $post)
             <div class="card mb-3">
@@ -16,7 +14,7 @@
                 </div>
                 <div class="card-body d-inline-flex">
                     <div class="col-md-4">
-                        <img src="{{ asset('storage' . $post->image) }}" class="post__image" alt="{{ $post->header }}">
+                        <img class="news__photo" src="{{ asset('storage' . $post->image) }}" class="post__image" alt="{{ $post->header }}">
                     </div>
                     <div class="col-md-8">
                         <p class="card-text text-justify">{{ $post->main }}</p>

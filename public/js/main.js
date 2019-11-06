@@ -17801,14 +17801,21 @@ window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jqu
 
 __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 
-(function () {
+window.addEventListener('DOMContentLoaded', function (event) {
   var burger = document.querySelector('.burger-container'),
       header = document.querySelector('.header');
 
   burger.onclick = function () {
     header.classList.toggle('menu-opened');
   };
-})();
+
+  $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox({
+      wrapping: false
+    });
+  });
+});
 
 /***/ }),
 
@@ -17819,7 +17826,7 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/andreyyaroshevskyy/Sites/CityLine/resources/js/static/main.js */"./resources/js/static/main.js");
+module.exports = __webpack_require__(/*! /Users/kingeugene/Sites/lawyer/resources/js/static/main.js */"./resources/js/static/main.js");
 
 
 /***/ })
