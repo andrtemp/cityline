@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('page-name')
-    Новости
+    Новини
 @endsection
 
 @section('content')

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('page-name')
-    Цены
+    Ціни
 @endsection
 
 @section('content')

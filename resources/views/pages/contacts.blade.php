@@ -1,14 +1,11 @@
 @extends('layouts.app')
 
 @section('page-name')
-    Контакты
-@endsection
-
-@section('end-full-screen')
+    Контакти
 @endsection
 
 @section('content')
-    <h1>Контакти </h1>
+    <h1>Контакти</h1>
     <div class="contact">
         <div class="contact__text">
             <div>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('page-name')
-    City Line
+    Адвокат:  Щербина Євгеній Євгенійович
 @endsection
 
 @section('content')
