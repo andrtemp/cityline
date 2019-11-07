@@ -28,14 +28,19 @@
         </div>
         <div class="aboutMe__text">
             <h4 class="aboutMe__text-title">Адвокат:  Щербина Євгеній Євгенійович  <span>з  10  річним стажем роботи</span></h4>
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci amet atque aut earum eligendi et fuga hic impedit iste nesciunt officia perferendis quae reprehenderit, sit unde voluptas voluptatem.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci amet atque aut earum eligendi et fuga hic impedit iste nesciunt officia perferendis quae reprehenderit, sit unde voluptas voluptatem.
-            <br><br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci amet atque aut earum eligendi et fuga hic impedit iste nesciunt officia perferendis quae reprehenderit, sit unde voluptas voluptatem.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci amet atque aut earum eligendi et fuga hic impedit iste nesciunt officia perferendis quae reprehenderit, sit unde voluptas voluptatem.
-            <br>
-            <br>
+            <br/>
+            <p>Вітаю Вас на своєму сайті</p>
+            <br/>
+            <p>Готовий  надати дійсно  кваліфіковану та  якісну правову допомогу  та  вирішити питання, які виникли у Вашому житті.</p>
+            <br/>
+            <p>Маю необхідні  знання, досвід  та розуміння  юридичного супроводження  процесу надання  адвокатських послуг.</p>
+            <br/>
+            <p>В жодному разі  не  буду вводити в оману клієнта  (видавати бажане за дійсне)  та  гарантую  повний та всебічний захист Ваших  прав та  інтересів.</p>
+            <br/>
+            <p>Ваші проблеми стануть моїми.</p>
+            <p>Я  докладу  усіх  зусиль  для їх скорішого вирішення.</p>
+            <p>Я зацікавлений у кожному клієнті тому працюю на совість.</p>
+            <br/>
             <div class="aboutMe__text-phone">
                 <i class="fa fa-phone"></i>
                 <a href="tel:066-884-53-50">097-02-04-083</a>
