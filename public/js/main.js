@@ -17826,7 +17826,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kingeugene/Sites/lawyer/resources/js/static/main.js */"./resources/js/static/main.js");
+module.exports = __webpack_require__(/*! /Users/andreyyaroshevskyy/Sites/CityLine/resources/js/static/main.js */"./resources/js/static/main.js");
 
 
 /***/ })

@@ -259,6 +259,11 @@ h1 {
       width: 43%;
     }
 
+    &-image {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
     &-title {
       font-style: italic;
     }
@@ -276,70 +281,70 @@ h1 {
 
 //contact
 .contact {
- &__text {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   margin-bottom: 40px;
-   border-radius: 30px;
-   box-shadow: 0 3px 10px rgba(0,0,0,.3);
-   transition: .3s;
-   padding: 8px;
-   line-height: 2;
-   flex-direction: column-reverse;
+  &__text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+    transition: .3s;
+    padding: 8px;
+    line-height: 2;
+    flex-direction: column-reverse;
 
-   @include bp(m) {
-     flex-direction: row;
-   }
+    @include bp(m) {
+      flex-direction: row;
+    }
 
-   div {
-     color: $orange;
-   }
+    div {
+      color: $orange;
+    }
 
-   &-phone {
-     font-style: italic;
-     font-size: 20px;
-   }
+    &-phone {
+      font-style: italic;
+      font-size: 20px;
+    }
 
-   a {
-     color: $orange !important;
-     text-decoration: underline;
-   }
+    a {
+      color: $orange !important;
+      text-decoration: underline;
+    }
 
-   &:hover {
-     transform: translateY(-4px);
-     box-shadow: 0 3px 20px rgba(0,0,0,.5);
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 3px 20px rgba(0, 0, 0, .5);
 
-   }
- }
+    }
+  }
 }
 
 .service, .price {
   padding: 0;
 
-    li {
-      list-style-type: none;
-      padding: 20px 10px;
-      background: $orange;
-      border-radius: 20px;
-      box-shadow: 0 3px 10px rgba(0,0,0,.3);
-      margin-bottom: 40px;
-      text-align: center;
-      color: $white;
-      font-size: 20px;
-      transition: .3s;
+  li {
+    list-style-type: none;
+    padding: 20px 10px;
+    background: $orange;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+    margin-bottom: 40px;
+    text-align: center;
+    color: $white;
+    font-size: 20px;
+    transition: .3s;
 
-      &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 3px 20px rgba(0,0,0,.5);
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 3px 20px rgba(0, 0, 0, .5);
 
-      }
-
-      a {
-        display: block;
-        color: $white;
-      }
     }
+
+    a {
+      display: block;
+      color: $white;
+    }
+  }
 }
 
 .news {
