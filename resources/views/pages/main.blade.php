@@ -9,21 +9,9 @@
     <div class="aboutMe">
         <div class="aboutMe__iconWrap">
             <div class="aboutMe__icon aboutMe__iconMain">
-                <a href="img/aboutMe1.jpg" data-toggle="lightbox" data-gallery="gallery">
-                    <img src="img/aboutMe1.jpg" alt="lawyer" class="img-fluid">
+                <a href="{{ asset('img/aboutMe1.jpg') }}" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="{{ asset('img/aboutMe1.jpg') }}" alt="lawyer" class="img-fluid">
                 </a>
-            </div>
-            <div class="aboutMe__iconWrap-small">
-                <div class="aboutMe__icon">
-                    <a href="img/aboutMe2.jpeg" data-toggle="lightbox" data-gallery="gallery">
-                        <img src="img/aboutMe2.jpeg" alt="lawyer" class="img-fluid">
-                    </a>
-                </div>
-                <div class="aboutMe__icon">
-                    <a href="img/aboutMe3.jpeg" data-toggle="lightbox" data-gallery="gallery">
-                        <img src="img/aboutMe3.jpeg" alt="lawyer" class="img-fluid">
-                    </a>
-                </div>
             </div>
         </div>
         <div class="aboutMe__text">
