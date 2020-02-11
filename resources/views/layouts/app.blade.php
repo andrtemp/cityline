@@ -40,11 +40,11 @@
         <div class="container headerWrap">
             <div class="logo"><a href="/"><img src="{{ asset('img/logo.png') }}" alt="logo"></a></div>
             <ul class="navWrap">
-                <li class="nav"><a href="/">Про мене</a></li>
-                <li class="nav"><a href="/services">Послуги</a></li>
-                <li class="nav"><a href="/pricing">Ціни</a></li>
-                <li class="nav"><a href="/contacts">Контакти</a></li>
-                <li class="nav"><a href="/news">Новини</a></li>
+                <li class="nav"><a href="/">{{ __('layout.about') }}</a></li>
+                <li class="nav"><a href="/services">{{ __('layout.services') }}</a></li>
+                <li class="nav"><a href="/pricing">{{ __('layout.pricing') }}</a></li>
+                <li class="nav"><a href="/contacts">{{ __('layout.contacts') }}</a></li>
+                <li class="nav"><a href="/news">{{ __('layout.news') }}</a></li>
             </ul>
         </div>
         <div class="menuBurger">
@@ -55,11 +55,11 @@
                 </div>
             </div>
             <ul class="menu">
-                <li class="menu-item"><a href="/">Про мене</a></li>
-                <li class="menu-item"><a href="/services">Послуги</a></li>
-                <li class="menu-item"><a href="/pricing">Ціни</a></li>
-                <li class="menu-item"><a href="/contacts">Контакти</a></li>
-                <li class="menu-item"><a href="/news">Новини</a></li>
+                <li class="menu-item"><a href="/">{{ __('layout.about') }}</a></li>
+                <li class="menu-item"><a href="/services">{{ __('layout.services') }}</a></li>
+                <li class="menu-item"><a href="/pricing">{{ __('layout.pricing') }}</a></li>
+                <li class="menu-item"><a href="/contacts">{{ __('layout.contacts') }}</a></li>
+                <li class="menu-item"><a href="/news">{{ __('layout.news') }}</a></li>
             </ul>
         </div>
 

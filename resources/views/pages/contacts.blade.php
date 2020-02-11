@@ -24,7 +24,7 @@
             </div>
             <div>
                 <i class="fa fa-location-arrow"></i>
-                Місто Київ вул. О. Гончара 71.
+                {{ __('contacts.location') }}
             </div>
         </div>
         <div class="contact__map">

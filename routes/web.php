@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,3 +34,8 @@ Route::get('/admin/news/form', 'HomeController@form')->name('admin-news-form');
 Route::post('/admin/news/form', 'HomeController@store');
 Route::put('/admin/news/form/{id}', 'HomeController@update');
 Route::delete('/admin/news/{id}', 'HomeController@delete');
+
+Route::get('/locale/{locale}', function ($locale) {
+    session(['locale' => $locale]);
+    return redirect('/');
+});
