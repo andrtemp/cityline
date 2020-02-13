@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('page-name')
-    Новини
+    {{ __('news.header') }}
 @endsection
 
 @section('content')
-    <h1>Новини </h1>
+    <h1>{{ __('news.header') }}</h1>
     <div class="news__container">
         @foreach($news as $post)
             <div class="card mb-3">

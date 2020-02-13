@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
 @section('page-name')
-    Послуги
+    {{ __('services.header') }}
 @endsection
 
 @section('content')
-    <h1>Послуги</h1>
+    <h1>{{ __('services.header') }}</h1>
     <ul class="service">
-        <a href="/pricing"><li>Представництво в судах</li></a>
-        <a href="/pricing"><li>Спори з суб’єктами владних повноважень ( податкова та інші контролюючі органи)  </li></a>
-        <a href="/pricing"><li>Адвокатська допомога при притягненні до адміністративної відповідальності ( ДТП, корупційні правопорушення) </li></a>
-        <a href="/pricing"><li>Цивільні справи ( нерухомість, стягнення боргів, спадщина )</li></a>
-        <a href="/pricing"><li>Господарські справи ( спори  між юридичними особами та фізичними особами-підприємцями) </li></a>
-        <a href="/pricing"><li>Кримінальні справи ( корупційні та службові злочини)</li></a>
-        <a href="/pricing"><li>Юридичні консультації </li></a>
+        <a href="/pricing"><li>{{ __('services.s_1') }}</li></a>
+        <a href="/pricing"><li>{{ __('services.s_2') }}</li></a>
+        <a href="/pricing"><li>{{ __('services.s_3') }}</li></a>
+        <a href="/pricing"><li>{{ __('services.s_4') }}</li></a>
+        <a href="/pricing"><li>{{ __('services.s_5') }}</li></a>
+        <a href="/pricing"><li>{{ __('services.s_6') }}</li></a>
+        <a href="/pricing"><li>{{ __('services.s_7') }}</li></a>
     </ul>
 @endsection

@@ -15,7 +15,7 @@ class Locale
      */
     public function handle($request, Closure $next)
     {
-        $locale = $request->session()->get('locale');
+        $locale = $request->session()->get('locale', 'ru');
         \session(['locale' => $locale]);
         App::setLocale($locale);
         return $next($request);

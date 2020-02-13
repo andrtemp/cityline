@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('page-name')
-    Контакти
+    {{ __('contacts.header') }}
 @endsection
 
 @section('content')
-    <h1>Контакти</h1>
+    <h1>{{ __('contacts.header') }}</h1>
     <div class="contact">
         <div class="contact__text">
             <div>

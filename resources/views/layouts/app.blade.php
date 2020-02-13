@@ -45,6 +45,12 @@
                 <li class="nav"><a href="/pricing">{{ __('layout.pricing') }}</a></li>
                 <li class="nav"><a href="/contacts">{{ __('layout.contacts') }}</a></li>
                 <li class="nav"><a href="/news">{{ __('layout.news') }}</a></li>
+                <li class="nav ">
+                    <a href="/locale/ru"><img src="{{ asset('img/ru.ico') }}" alt="Русский"/></a>
+                </li>
+                <li class="nav ">
+                    <a href="/locale/ua"><img src="{{ asset('img/ua.ico') }}" alt="Українська"/></a>
+                </li>
             </ul>
         </div>
         <div class="menuBurger">
@@ -60,6 +66,19 @@
                 <li class="menu-item"><a href="/pricing">{{ __('layout.pricing') }}</a></li>
                 <li class="menu-item"><a href="/contacts">{{ __('layout.contacts') }}</a></li>
                 <li class="menu-item"><a href="/news">{{ __('layout.news') }}</a></li>
+                <li>
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="/locale/ru">Русский</a>
+                            <a class="dropdown-item" href="/locale/ua">Українська</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
 
